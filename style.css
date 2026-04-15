@@ -526,48 +526,157 @@ h1, h2, h3, h4 {
     .contacts-content {
         grid-template-columns: 1fr;
     }
+    .nav {
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
     .header-inner {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+    }
+    .logo {
+        font-size: 1.4rem;
     }
     .nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
+    }
+    .header-inner .btn {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
     }
     .hero {
-        padding: 150px 0 80px;
+        padding: 140px 0 60px;
     }
     .hero-title {
-        font-size: 2.2rem;
-    }
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-    .section-title {
         font-size: 1.8rem;
     }
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    .hero .btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    .problems, .specialist, .advantages, .solution {
+        padding: 60px 0;
+    }
+    .problems-grid, .specialist-grid, .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .problem-card, .specialist-item, .advantage-card {
+        padding: 20px;
+    }
+    .problem-icon, .specialist-icon, .advantage-icon {
+        font-size: 2rem;
+    }
+    .problem-title, .specialist-title, .advantage-title {
+        font-size: 1.1rem;
+    }
+    .problem-desc, .specialist-desc, .advantage-desc {
+        font-size: 0.9rem;
+    }
+    .solution-text {
+        font-size: 1.2rem;
+    }
     .solution-stats {
-        gap: 30px;
+        gap: 20px;
     }
     .stat-number {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .stat-label {
+        font-size: 0.9rem;
+    }
+    .form-section, .form-section-alt {
+        padding: 60px 0;
     }
     .contact-form {
-        padding: 30px 20px;
+        padding: 25px 20px;
+        margin: 0 10px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group input, .form-group textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    .contacts {
+        padding: 60px 0;
+    }
+    .contacts-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .contact-item i {
+        width: auto;
+        font-size: 1.5rem;
+    }
+    .map-placeholder {
+        height: 200px;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+    .footer-logo {
+        font-size: 1.5rem;
+    }
+    .footer-text {
+        font-size: 0.9rem;
+    }
+    .footer-social {
+        gap: 15px;
+    }
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 480px) {
-    .problems-grid,
-    .specialist-grid,
-    .advantages-grid {
-        grid-template-columns: 1fr;
+    .container {
+        padding: 0 15px;
     }
-    .btn {
-        padding: 12px 24px;
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    .section-title {
+        font-size: 1.4rem;
+    }
+    .solution-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .stat {
+        text-align: center;
+    }
+    .stat-number {
+        font-size: 2.2rem;
     }
 }
 .form-section-alt {
